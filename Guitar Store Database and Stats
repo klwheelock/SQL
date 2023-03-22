@@ -1,0 +1,20 @@
+CREATE TABLE guitar_lord_store (id INTEGER PRIMARY KEY, make TEXT, model TEXT, color TEXT, cost INTEGER);
+
+INSERT INTO guitar_lord_store VALUES (1, "GIBSON", "SG", "RED", 1099);
+INSERT INTO guitar_lord_store VALUES (2, "GIBSON", "ES 335", "RED", 2600);
+INSERT INTO guitar_lord_store VALUES (3, "EPIPHONE", "SG", "RED", 600);
+INSERT INTO guitar_lord_store VALUES (4, "IBANEZ", "Q52", "BLACK", 999);
+INSERT INTO guitar_lord_store VALUES (5, "FENDER", "STRATOCASTER", "BLACK", 1200);
+INSERT INTO guitar_lord_store VALUES (6, "SQUIER", "STRATOCASTER", "BLUE", 500);
+INSERT INTO guitar_lord_store VALUES (7, "FENDER","TELECASTER", "RED", 1000);
+INSERT INTO guitar_lord_store VALUES (8,"GIBSON", "LES PAUL", "WHITE", 1200);
+INSERT INTO guitar_lord_store VALUES (9, "EPIPHONE", "LES PAUL", "RED", 600);
+INSERT INTO guitar_lord_store VALUES (10, "EPIPHONE", "ES 335", "GOLD", 699);
+INSERT INTO guitar_lord_store VALUES (11, "SQUIER", "TELECASTER", "SHELL PINK", 599);
+INSERT INTO guitar_lord_store VALUES (12, "EPIPHONE", "SHERATON", "NATURAL", 800);
+INSERT INTO guitar_lord_store VALUES (13, "FENDER", "STARCASTER", "BLACK", 1200);
+INSERT INTO guitar_lord_store VALUES (14, "SQUIER", "STARCASTER", "NATURAL", 399);
+INSERT INTO guitar_lord_store VALUES (15, "GIBSON", "ES 333", "BROWN", 12000);
+
+SELECT * FROM guitar_lord_store ORDER BY cost;
+SELECT MAX (cost)  FROM guitar_lord_store;
